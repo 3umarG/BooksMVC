@@ -43,6 +43,15 @@ namespace BooksWebApp.Migrations
                     b.HasKey("CategoryID");
 
                     b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            CategoryID = 1,
+                            CreatedDateTime = new DateTime(2023, 6, 26, 4, 41, 49, 500, DateTimeKind.Local).AddTicks(6719),
+                            DisplayOrder = 50,
+                            Name = "Category 1"
+                        });
                 });
 #pragma warning restore 612, 618
         }
